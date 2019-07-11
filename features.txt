@@ -1,0 +1,57 @@
+Proposed Functionalities:
+
+For Visitor:
+    1. Landing
+    2. Pricing
+    3. Blog
+    4. Contact Us
+    5. Login/Register
+
+For User:
+    1. Dashboard
+        1.0 Highlights of Today's Medications
+        1.1 Appointments Reminder
+        1.2 Medicine Stock Reminder
+        1.3 Blood Sugar Level Chart
+        1.4 Blood Pressure Level Chart
+    2. Medications
+        2.0 Today's Medication
+        2.1 Medication Calender
+        2.2 CRUD Medications
+        2.3 CRUD Reminders
+        2.4 CRUD Stocks
+    3. Blood Sugar
+        3.0 Current Sugar Status
+        3.1 CRUD Sugar Level
+        3.2 CRUD Sugar Reports
+    4. Blood Pressure
+        4.0 Current BP Status
+        4.1 CRUD BP Level
+        4.2 CRUD BP Reports
+    5. Appointments
+        5.0 Today's Appointments
+        5.1 Schedule Appointments
+        5.2 My Appointments
+    6. Medical Reports
+        6.1 Daily Report
+        6.2 Sugar Report
+        6.3 BP Report
+        6.4 Weekly/Monthly/Yearly Health Report
+        6.5 Medications Report
+        6.6 Test Reports
+    7. Medical Profile
+        7.1 Basic Information : Height, Weight, Birthmark, Eye-power
+        7.2 Allergic Information
+        7.3 Past Medical History
+    8. Account
+        8.1 CRUD User
+        8.2 Upgrade Account
+        8.3 Feedback
+        8.4 Sign Out
+
+Future Scope:
+    1. Periods Tracker
+    2. Diet Planning
+    3. Health Prediction
+    4. Payment Integration for Medicines & Appointments
+    5. Challenges / Profile Badge Building
