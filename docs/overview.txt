@@ -1,0 +1,14 @@
+Project Defination:
+    To build and maintain a centralized system to store and analyse person's health data, To generate insightful reports.
+
+Vision:
+    To provide a convenient way to save the medical history and to help person to acheive his health goals by providing data-rich reports.
+
+Future Scope:
+    As the project is built while keeping the individual person in consideration, it can be extended as a whole health management system for the doctors and hospitals both.
+    Integration with existing systems.
+    Applying data science techniques to statistically analyse person's health and to provide solutions for any upcoming threats.
+    Disease Prediction using the available pattern of health data.
+
+Project Deadline and Completion:
+    Project is intended to complete with its proposed functionalities before 10th October, 2019 as per the schedule.
