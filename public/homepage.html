@@ -2,53 +2,40 @@
 <html>
 <head>
 <title>Pill Pulse</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <style>
+	.sitename{
+    color:red;
+    font-size: 30px;
+}
+.container1{
+	padding-top: 100px;
 	
-
+}
 .mycarousol{
 padding-right: 10px;
 	padding-left: 10px;
 	height:500px;
 }
 .mycard{
+	height: 200px;
 	width: 100%;
 }
-
-navbar .navbar-toggler .icon-bar {
-  background: black !important;
-
-}
-.navs a{
-
-	font-size:20px;
-	color:#000;
-
-}
-
 	</style>
 
 
 
 </head>
 <body>
-  
-<div id=container1>
-<nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-white ">
-<button class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon "></span>
-  </button>
-  <a class="navbar-brand" href="#" style=" color:#18b9ce;  font-size: 30px;">
-   
+<nav class="navbar fixed-top navbar-right bg-white ">
+  <a class="navbar-brand sitename" href="#">
+    <img src="/home/user1/Desktop/logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
    &nbsp;&nbsp; PILLPULSE
   </a>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-  <ul class="nav justify-content-end  my-lg-0 navs">
+  <ul class="nav">
   <li class="nav-item">
     <a class="nav-link active" href="#">Home</a>
   </li>
@@ -62,10 +49,9 @@ navbar .navbar-toggler .icon-bar {
     <a class="nav-link" href="#">Login</a>
   </li>
 </ul>
-</div>
 </nav>
-
-<div id="carouselExampleIndicators" class="carousel slide mycarousol pt-5" data-ride="carousel" data-interval="2000">
+<div class="container1" >
+<div id="carouselExampleIndicators" class="carousel slide mycarousol" data-ride="carousel" data-interval="2000">
 
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -80,12 +66,13 @@ navbar .navbar-toggler .icon-bar {
       <img class="d-block w-100" src="https://www.carecloud.com/wp-content/uploads/2014/07/ipad-labs@2x.png"  width="150" height="500"alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 " src="https://www.mytherapyapp.com/data/content/1-home/pill-and-medication-reminder-mytherapy_journal-view-v2_en.png"  width="150" height="500" alt="Third slide">
+      <img class="d-block w-100" src="https://www.mytherapyapp.com/data/content/1-home/pill-and-medication-reminder-mytherapy_journal-view-v2_en.png"  width="150" height="500" alt="Third slide">
       <div class="carousel-caption d-none d-md-block">
     <h5>Simple Overview</h5>
     <p>...</p>
     </div>
   </div>
+</div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -96,56 +83,33 @@ navbar .navbar-toggler .icon-bar {
   </a>
 </div>
 
-</div>
-<div class="card text mycard">
+
+<div class="card text-center mycard">
 
   <div class="card-body">
-  <div class="row">
-
-  <div class="col-sm-6 " align="middle">
-<img src="https://www.mytherapyapp.com/data/content/1-home/pill-and-medication-reminder-mytherapy_journal-view-v2_en.png" height="320" width="296.5" alt="img"></img>
-</div>
-<div class="col-sm-6 pt-5 ">
     <h5 class="card-title">Simple overview
 </h5>
     <p class="card-text">MyTherapy not only document your health but also allows you to visualise patterns within it. <br>You can have a general overview but also recognise which areas of your treatment have room for improvement.</p>
   </div>
 </div>
-</div>
-</div>
-
-
-<div class="card text mycard">
+<div class="card text-center mycard">
 
   <div class="card-body">
-  <div class="row">
-   <div class="col-sm-6 pt-5" > 
     <h5 class="card-title text-center" >Together with your doctor
 
 </h5>
     <p class="card-text">Show your doctor how your health has progressed since the last appointment.<br> Print out the MyTherapy health report and use it as a discussion point at your next appointment.<br> Your doctor will not only gain a deeper overview of your progress but also be able to better cater to your needs.</p>
-    </div>
-  <div class="col-sm-6" align="middle">
-  <img src="https://www.mytherapyapp.com/data/content/1-home/pill-and-medication-reminder-mytherapy_health-report-v2_en.png" height="320" width="296.5" alt="img"></img>
-  </div>
- 
   </div>
 </div>
-</div>
-<div class="card text mycard">
+<div class="card text-center mycard">
 
   <div class="card-body">
-  <div class="row">
-  <div class="col-sm-6" align="middle">
-  <img src="https://www.mytherapyapp.com/data/content/1-home/pill-and-medication-reminder-mytherapy_team-function-v2_en.png" class="img-responsive" height="320" alt="img"></img>
-  </div>
-  <div  class="col-sm-6 pt-5">
-    <h5 class="card-title">Teamwork is better for all</h5>
+    <h5 class="card-title">Teamwork is better for all
+</h5>
     <p class="card-text">Lean on your family for more support and let your most trusted family members to be your safety net.<br> If you forget to take your medication, your family can be the additional pill reminder needed to get back on track.
 </p>
+  </div>
 </div>
-  </div>
-  </div>
 </div>
 
 <footer class="site-section container mt-4">
@@ -176,20 +140,13 @@ navbar .navbar-toggler .icon-bar {
 
 	<center class="mb-3 mt-2" > &copy; 2019 All rights reserved | Designed & Developed By <a href="">PillPulse Inc.</a></center>
 </footer>
-</div>
+
 
 </body>
 
 
-<script>
 
-  function display(){
-
-
-    document.getElementById("container1").style.display=block;
-    
-  }
-</script>
 
 </html>
+
 
