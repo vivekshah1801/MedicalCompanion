@@ -1,0 +1,45 @@
+
+<div class="backgroundimg1 pt-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active"><a href="#">Dashboard</a></li>
+        </ol>
+    </nav>
+
+    <div class="user-welcome" style="padding-bottom: 15px; margin-left:20px;margin-right:45px;border-bottom:2px solid rgba(100,100,100,.15)" class="mb-3">
+        <h2 class="d-inline">Hello Champ,{{username}}</h2>
+        <button class="btn btn-success d-inline float-right"><b>+</b> Add New</button>
+    </div>
+
+    <div class="fluid-container justify-content-center row">
+        <div class="col-md-3 card m-3">
+            <div height="100px" style="background-color:black;"></div>
+            <div class="card-body">
+                <h5 class="card-title">Medications</h5>
+                <p class="card-text">Get reminders and track of your daily medications</p>
+                <a class="btn btn-primary" (click)="goto('mymedication')">My Medications</a>
+            </div>
+        </div>
+        <div class="col-md-3 card m-3">
+            <div height="100px" style="background-color:black;"></div>
+            <div class="card-body">
+                <h5 class="card-title">Reports</h5>
+                <p class="card-text">All your reports at one safe place</p>
+                <a class="btn btn-primary" (click)="goto('myreports')">My Reports</a>
+            </div>
+        </div>
+        <div class="col-md-3 card m-3">
+            <div height="100px" style="background-color:black;"></div>
+            <div class="card-body">
+                <h5 class="card-title">Health Assitant</h5>
+                <p class="card-text">Doctors List, Diet Chart</p>
+                <a href="#" class="btn btn-primary">My Medications</a>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    
+</div>
