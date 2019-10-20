@@ -1,3 +1,25 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@nidzshah2702 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+0
+00vivekshah1801/MedicalCompanion Private
+ Code Issues 0 Pull requests 0 Projects 0 Wiki Security Insights
+MedicalCompanion/public/dashboard.component.html
+@vivekshah1801 vivekshah1801 dashboard chnages
+1f7966d 13 hours ago
+@nidzshah2702@vivekshah1801
+58 lines (51 sloc)  2.84 KB
+  
 <div class="backgroundimg1">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -25,7 +47,7 @@
                     <h3 class="card-title display-4 text-primary">Medication</h3>
                     <p class="card-text ">Keep track of your daily medications schedule with ease.</p>
                     <div class="">
-                        <a href="#" class="btn btn-primary">Go To My Medications</a>
+                        <a (click)="goto('mymedication')" class="btn btn-primary">Go To My Medications</a>
                     </div>
                 </div>
             </div>
@@ -37,7 +59,7 @@
                     <h5 class="card-title display-4 text-primary">Reports</h5>
                     <p class="card-text ">Medicals reports securely stored on a accessible platform.</p>
                     <div class="">
-                        <a href="#" class="btn btn-primary">Go To My Profile</a>
+                        <a (click)="goto('myreports')" class="btn btn-primary">Go To My Reports</a>
                     </div>
                 </div>
             </div>
@@ -49,7 +71,7 @@
                     <h5 class="card-title display-4 text-primary">Profile</h5>
                     <p class="card-text ">Access your medical profile from a single platform.</p>
                     <div class="">
-                        <a href="#" class="btn btn-primary">Go To My Profile</a>
+                        <a (click)="goto('myprofile')" class="btn btn-primary">Go To My Profile</a>
                     </div>
                 </div>
             </div>
