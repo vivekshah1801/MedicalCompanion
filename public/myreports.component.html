@@ -1,16 +1,41 @@
+<div class=" fluid-container content-wrapper p-3">
+	<h1 class="text-primary text-center">My Reports</h1>
+	
+	<div class="container card p-4 mt-4 ">
+		<div class="reportadd">
+			<form>
+				<div class="form-row justify-content-center">
+                	<label class="col-md-2 pt-1">Add new report</label>
+					<div class="col col-md-4 mr-2 custom-file">
+						<input type="file" class="custom-file-input" (change)="fileChangeEvent($event)" placeholder="Upload your Medical Report" id="customFile">
+						<label class="custom-file-label" for="customFile">Upload your Medical Report</label>
+					</div>
+					<div class="col col-md-2">
+				      <button type="button" (click)="upload()" class="btn btn-primary">Upload  <i class="fa fa-upload" title="upload report"></i></button>
+				    </div>
+				</div>
+			</form>
 
-<div style="padding-top:200px;">
+			<script>
+				// Add the following code if you want the name of the file appear on select
+				$(".custom-file-input").on("change", function() {
+					var fileName = $(this).val().split("\\").pop();
+					$(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+				});
+			</script>
+		</div>
 
-    <input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
-<button type="button" (click)="upload()">Upload</button>
-</div>
+		<div class="divider mt-3 mb-4"></div>
 
-<div class="row card" style="margin:30px">
-    <h4>My Reports</h4>
-
-    <div class="row" *ngFor="let item of reports; let i = index"
-    style="margin:30px;padding:5px;background-color:rgb(231, 229, 229); border-radius:5px; line-height:40px;">
-        <div class="col-sm-7">{{item.reportname}}</div>
-        <div class="col-sm-5" style="text-align:center;"><button type="button" class="btn btn-primary" (click)="download(i)">Download</button></div>
-    </div>
+		<div class="reportslist">
+			<div class="report" *ngFor="let item of reports; let i = index">
+				<div class="row  justify-content-center">
+					<div class="col-md-5 mt-1 reportname">{{item.reportname}}</div>
+					<button type="button" class="btn btn-primary col-md-1 reportdownload mx-1 text-white"><i class="fa fa-download" title="download report"></i></button>
+					<button type="button" class="btn btn-danger col-md-1 reportdelete mx-1 text-white"><i class="fa fa-trash" title="delete report" (click)="delete(i)"></i></button> 
+				</div>
+				<div class="report-seprator mx-auto col-md-8 d-block my-2"></div>
+			</div>
+		</div>
+	</div>
 </div>
