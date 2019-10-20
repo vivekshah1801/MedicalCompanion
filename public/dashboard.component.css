@@ -1,5 +1,13 @@
 .backgroundimg1{
-    background-color: rgba(100,100,100,0.1);    
+    background-color: rgba(100,100,100,0.1);  
+     
+    background: linear-gradient(-45deg,  #23a6d5, #efefef);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 14s ease infinite;
+	-moz-animation: AnimationName 14s ease infinite;
+	animation: AnimationName 14s ease infinite;
+ 
 }
 .dropshadow{
     box-shadow: 0 1px  0 rgba(0,0,0,0.1);
@@ -16,4 +24,21 @@
 #dashboard-panel .card-title{
     font-size: 3em;
     font-style: 700;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
