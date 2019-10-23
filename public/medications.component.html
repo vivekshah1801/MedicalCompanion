@@ -7,7 +7,7 @@
     </nav>
 
     <div class="user-welcome" style="padding-bottom: 15px; margin-left:20px;margin-right:45px;border-bottom:2px solid rgba(100,100,100,.15)" class="mb-3">
-        <h2 class="d-inline">Today's Medications <span class="badge badge-light">{{userMedications.length}}</span></h2>
+        <h2 class="d-inline">Today's Medications</h2>
         <button class="btn btn-success d-inline float-right"><b>+</b> Add New</button>
     </div>
 
@@ -19,10 +19,8 @@
                     <h4 class="d-inline text-right pill-time" >{{med.med_time}}</h4>
                 </div>
                 <div class="pill-body">
-                    <p>{{med.med_drug}}</p>
-                    <p><strong>{{med.med_stock}}</strong> pills left in stock
-                    <span *ngIf="med.med_stock < 15 " class="badge badge-danger ml-2 px-2 py-1">Buy Now</span>
-                    </p>
+                    <p> {{med.description}} </p>
+                    <p> {{med.startDate}} - {{med.endDate}} </p>
                 </div>
             </div>
         </div>
